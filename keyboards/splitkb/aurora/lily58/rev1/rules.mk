@@ -17,3 +17,4 @@
 # presence of this file is required for QMK to compile it.
 
 UNICODEMAP_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
