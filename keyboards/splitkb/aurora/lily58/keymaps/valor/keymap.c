@@ -46,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     	KC_ESC  , KC_1    , KC_2      , KC_3      , KC_4    , KC_5      ,                     KC_6      , KC_7    , KC_8    , KC_9    , KC_0    , KC_EQL  , 
     	KC_TAB  , KC_Q    , KC_W      , KC_E      , KC_R    , KC_T      ,                     KC_Z      , KC_U    , KC_I    , KC_O    , KC_P    , KC_SLSH , 
     	KC_LSFT , KC_A    , KC_S      , KC_D      , KC_F    , KC_G      ,                     KC_H      , KC_J    , KC_K    , KC_L    , KC_SCLN , KC_QUOT , 
-    	KC_LCTL , KC_Y    , KC_X      , KC_C      , KC_V    , KC_B      , KC_LBRC , KC_RBRC , KC_N      , KC_M    , KC_COMM , KC_DOT  , KC_MINS , KC_BSLS , 
-		                                KC_LALT   , KC_LGUI , MO(1)     , KC_SPC  , KC_ENT  , MO(2)     , KC_BSPC , KC_RALT
+    	KC_LCTL , KC_Y    , KC_X      , KC_C      , KC_V    , KC_B      , KC_LBRC , KC_MPLY , KC_N      , KC_M    , KC_COMM , KC_DOT  , KC_MINS , KC_BSLS , 
+		                                KC_LALT   , KC_LGUI ,MO(_LAYER1), KC_SPC  , KC_ENT  ,MO(_LAYER2), KC_BSPC , KC_RALT
        ),
     [_LAYER1] = LAYOUT(
      // XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX .
@@ -55,19 +55,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     	_______ , KC_F11  , KC_F12    , XXXXXXX   ,S(KC_LBRC),S(KC_RBRC),                     SI_ZCARON , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_PAST , 
     	_______ , XXXXXXX , SI_SCARON , XXXXXXX   , KC_LBRC , KC_RBRC   ,                     XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , 
     	_______ , XXXXXXX , XXXXXXX   , SI_CCARON , S(KC_9) , S(KC_0)   , XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_PPLS , 
-                                        _______   , _______ , _______   , _______ , _______ , MO(3)     , KC_DELETE , _______
+                                        _______   , _______ , _______   , _______ , _______ , MO(_RGB)  , KC_DELETE , _______
     ),
     [_LAYER2] = LAYOUT(	
      // XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX .
-    	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,
+    	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , XXXXXXX , KC_PGUP , XXXXXXX , XXXXXXX , XXXXXXX ,
     	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , KC_HOME , KC_UP   , KC_END  , XXXXXXX , XXXXXXX , 
     	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , KC_LEFT , KC_DOWN , KC_RGHT , XXXXXXX , XXXXXXX , 
-    	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , 
-    	                                _______   , _______ , MO(3)     , _______ , _______ , _______ , _______ , _______
+    	_______ , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , KC_BTN4 , KC_PGDN , KC_BTN5 , XXXXXXX , XXXXXXX , 
+    	                                _______   , _______ , MO(_RGB)  , _______ , _______ , _______ , _______ , _______
     ),
     [_RGB] = LAYOUT(
      // XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX .
-    	XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , RGB_MODE_BREATHE ,  
+    	XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,  
     	XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , RGB_MODE_PLAIN , 
     	XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   ,                     XXXXXXX , RGB_MOD , RGB_SPI , RGB_HUI , RGB_SAI , RGB_VAI , 
     	XXXXXXX , XXXXXXX , XXXXXXX   , XXXXXXX   , XXXXXXX , XXXXXXX   , XXXXXXX , XXXXXXX , XXXXXXX , RGB_RMOD, RGB_SPD , RGB_HUD , RGB_SAD , RGB_VAD , 
@@ -77,10 +77,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [_BASE] =   { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN), ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  },
-    [_LAYER1] =  { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(RGB_SAD, RGB_SAI)  },
-    [_LAYER2] =  { ENCODER_CCW_CW(RGB_VAD, RGB_VAI),           ENCODER_CCW_CW(RGB_SPD, RGB_SPI)  },
-    [_RGB] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD),          ENCODER_CCW_CW(KC_RIGHT, KC_LEFT) },
+    [_BASE] =    { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN), ENCODER_CCW_CW(KC_VOLD,  KC_VOLU)  },
+    [_LAYER1] =  { ENCODER_CCW_CW(RGB_HUD,     RGB_HUI),       ENCODER_CCW_CW(KC_UP,    KC_DOWN)  },
+    [_LAYER2] =  { ENCODER_CCW_CW(KC_LEFT,     KC_RIGHT),      ENCODER_CCW_CW(RGB_SPD,  RGB_SPI)  },
+    [_RGB] =     { ENCODER_CCW_CW(RGB_RMOD,    RGB_MOD),       ENCODER_CCW_CW(KC_RIGHT, KC_LEFT)  },
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 
