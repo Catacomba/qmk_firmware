@@ -1,3 +1,18 @@
+# Personal quick links and notes
+
+- Setup:
+1. Install [qmk mysys](https://msys.qmk.fm/) and [qmk toolbox](https://github.com/qmk/qmk_toolbox)
+2. Clone this repo into C:\Users\_user_\qmk_firmware
+    This is the default location for the qmk msys to use the firmware
+3. Startup qmk msys and setup config with this command:    
+```bash 
+    qmk config compile.keymap=valor compile.keyboard=splitkb/aurora/lily58
+```
+    
+4. Compile the .hex file with ```qmk compile``` and load it with qmk toolbox
+- Keycodes: https://docs.qmk.fm/#/keycodes
+
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
