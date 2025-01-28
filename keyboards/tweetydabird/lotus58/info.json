@@ -22,8 +22,7 @@
         "oled": true,
         "encoder": true,
         "rgblight": true,
-        "split": true,
-        "tri_layer": true
+        "split": true
     },
     "matrix_pins": {
         "cols": ["B1", "B2", "B3", "B6", "F7", "F6"],
@@ -79,14 +78,15 @@
                 {"label": "3", "matrix": [0, 3], "x": 3, "y": 0},
                 {"label": "4", "matrix": [0, 4], "x": 4, "y": 0.25},
                 {"label": "5", "matrix": [0, 5], "x": 5, "y": 0.5},
-                {"label": "Left ENC", "matrix": [4, 0], "x": 6.25, "y": 0.75},
-                {"label": "Right ENC", "matrix": [9, 0], "x": 7.75, "y": 0.75},
+                // {"label": "Left ENC", "matrix": [4, 0], "x": 6.25, "y": 0.75},
+                // {"label": "Right ENC", "matrix": [9, 0], "x": 7.75, "y": 0.75},
                 {"label": "6", "matrix": [5, 5], "x": 9, "y": 0.5},
                 {"label": "7", "matrix": [5, 4], "x": 10, "y": 0.25},
                 {"label": "8", "matrix": [5, 3], "x": 11, "y": 0},
                 {"label": "9", "matrix": [5, 2], "x": 12, "y": 0.25},
                 {"label": "0", "matrix": [5, 1], "x": 13, "y": 0.5},
                 {"label": "-", "matrix": [5, 0], "x": 14, "y": 0.75},
+
                 {"label": "Tab", "matrix": [1, 0], "x": 0, "y": 1.75},
                 {"label": "Q", "matrix": [1, 1], "x": 1, "y": 1.5},
                 {"label": "W", "matrix": [1, 2], "x": 2, "y": 1.25},
@@ -99,6 +99,7 @@
                 {"label": "O", "matrix": [6, 2], "x": 12, "y": 1.25},
                 {"label": "P", "matrix": [6, 1], "x": 13, "y": 1.5},
                 {"label": "{", "matrix": [6, 0], "x": 14, "y": 1.75},
+
                 {"label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2.75},
                 {"label": "A", "matrix": [2, 1], "x": 1, "y": 2.5},
                 {"label": "S", "matrix": [2, 2], "x": 2, "y": 2.25},
@@ -111,6 +112,7 @@
                 {"label": "L", "matrix": [7, 2], "x": 12, "y": 2.25},
                 {"label": ":", "matrix": [7, 1], "x": 13, "y": 2.5},
                 {"label": "\"", "matrix": [7, 0], "x": 14, "y": 2.75},
+
                 {"label": "L_Ctrl", "matrix": [3, 0], "x": 0, "y": 3.75},
                 {"label": "Z", "matrix": [3, 1], "x": 1, "y": 3.5},
                 {"label": "X", "matrix": [3, 2], "x": 2, "y": 3.25},
@@ -125,6 +127,7 @@
                 {"label": ".", "matrix": [8, 2], "x": 12, "y": 3.25},
                 {"label": "?", "matrix": [8, 1], "x": 13, "y": 3.5},
                 {"label": "R_Ctrl", "matrix": [8, 0], "x": 14, "y": 3.75},
+
                 {"label": "Win", "matrix": [4, 1], "x": 2.5, "y": 4.25},
                 {"label": "Lower", "matrix": [4, 2], "x": 3.5, "y": 4.25},
                 {"label": "Alt", "matrix": [4, 3], "x": 4.5, "y": 4.5},
